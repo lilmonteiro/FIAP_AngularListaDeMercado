@@ -1,0 +1,25 @@
+.list-card {
+    display: block;
+}
+
+.list-items-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 45vh;
+    overflow: scroll;
+}
+
+.add-button {
+    width: 45px; // Set the width of the button
+    height: 45px; // Set the height of the button
+    min-width: 45px; // Avoid Material default min-width
+    min-height: 45px; // Avoid Material default min-height
+    font-size: 25px; // Adjust the icon size
+    align-self: flex-end;
+    margin-bottom: -25px;
+
+    mat-icon {
+        font-size: 25px; // Adjust icon size inside the FAB
+    }
+}

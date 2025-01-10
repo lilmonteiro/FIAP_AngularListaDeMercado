@@ -1,0 +1,11 @@
+@use "../../../styles.scss" as global;
+@use '@angular/material' as mat;
+
+.custom-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: global.$color-background-medium;
+    border: none;
+}

@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@include mat.core();
+
+$angularFiap-primary: mat.m2-define-palette(mat.$m2-indigo-palette);
+$angularFiap-accent: mat.m2-define-palette(mat.$m2-pink-palette, A200, A100, A400);
+$angularFiap-warn: mat.m2-define-palette(mat.$m2-red-palette);
+
+$angularFiap-theme: mat.m2-define-light-theme((
+  color: (
+    primary: $angularFiap-primary,
+    accent: $angularFiap-accent,
+    warn: $angularFiap-warn,
+  ),
+  typography: mat.m2-define-typography-config(),
+  density: 0
+));
+
+@include mat.all-component-themes($angularFiap-theme);
+
+$text-size-small: 12px;
+$text-size-medium: 14px;
+$text-size-regular: 18px;
+$text-size-large: 20px;
+
+$text-weight-thin: thin;
+$text-weight-bold: bold;
+$text-weight-normal: normal;
+
+$border-radius-large: 20px;
+$border-radius-small: 5px;
+
+$color-primary: #FFB300;
+$color-primary-dark: #815F10;
+$color-secondary: #5AC86C;
+$color-secondary-dark: #000000;
+
+$color-feira: #5AC86C;
+$color-limpeza: #9747FF;
+$color-alimentos: #D732A8;
+$color-bebidas: #522504;
+$color-frios: #2075FF;
+
+$color-accent: #EDBC4A;
+$color-background-light: #ffffff;
+$color-background-medium: #E7E7E7;
+$color-background-dark: #D5D5D5;
+$color-background-darker: #A6A6A6;
+
+html, body { height: 100%; }
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body { 
+  margin: 0; 
+  font-family: "Inter", sans-serif; 
+}

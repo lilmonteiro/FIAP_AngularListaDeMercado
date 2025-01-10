@@ -1,0 +1,25 @@
+@use "../../../styles.scss" as global;
+
+.header {
+    background-color: global.$color-primary;
+    border-end-end-radius: global.$border-radius-large;
+    border-end-start-radius: global.$border-radius-large;
+    font-size: global.$text-size-large;
+    font-weight: global.$text-weight-bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    overflow: hidden;
+    height: 10%;
+    max-height: 100px;
+}
+
+.logo {
+    height: 150%;
+}
+
+.version {
+    font-size: global.$text-size-small;
+    font-weight: global.$text-weight-thin;
+}

@@ -1,0 +1,14 @@
+@use "../../../styles.scss" as global;
+@use '@angular/material' as mat;
+
+.cart-header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.cart-text{
+    font-size: global.$text-size-medium;
+    font-weight: global.$text-weight-bold;
+}

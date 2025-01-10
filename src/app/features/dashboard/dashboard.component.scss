@@ -1,0 +1,11 @@
+@use "../../../styles.scss" as global;
+@use '@angular/material' as mat;
+
+.dashboard-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: global.$color-background-medium;
+    border: none;
+}

@@ -1,0 +1,15 @@
+<custom-card class="list-card">
+    <list-header />
+
+    <div class="list-items-container">
+        <list-item 
+            *ngFor="let item of items" 
+            name={{item.name}} 
+            category={{item.category}}>
+        </list-item>
+    </div>
+
+    <button class="add-button" mat-fab aria-label="Button do add item to list">
+        <mat-icon>add</mat-icon>
+    </button>
+</custom-card>

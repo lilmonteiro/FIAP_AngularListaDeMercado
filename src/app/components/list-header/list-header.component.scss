@@ -1,0 +1,40 @@
+@use "../../../styles.scss" as global;
+
+.list-header,
+.filter-container,
+.filter-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list-header{
+    justify-content: space-between;
+    p{
+        font-size: global.$text-size-large;
+        font-weight: global.$text-weight-bold;
+    }
+}
+
+.filter-container {
+    gap: 2px;
+    span {
+        font-size: global.$text-size-small;
+        font-weight: global.$text-weight-bold;
+    }
+}
+
+.filter-icon {
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    height: 30px !important;
+    width: 30px !important;
+    padding: 5px !important;
+
+    .mat-icon {
+        font-size: 20px;
+        height: fit-content;
+        width: fit-content;
+    }
+}

@@ -1,0 +1,12 @@
+@use "../../../styles.scss" as global;
+
+.categories-graphic{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categories-title{
+    font-size: global.$text-size-medium;
+    font-weight: global.$text-weight-bold;
+}

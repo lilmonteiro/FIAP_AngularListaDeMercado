@@ -1,0 +1,13 @@
+<mat-card  class="item-card" appearance="outlined" [ngClass]="{ 'selected': isSelected, 'unselected': !isSelected }">
+    <div class="content">
+        <p class="list-title">{{ name }}</p>
+        <p class="list-subtitle">{{ category }}</p>
+    </div>
+    <mat-checkbox 
+        class="checkbox"
+        [checked]="isSelected" 
+        (change)="isSelected = !isSelected"
+        [ngClass]="{ 'selected': isSelected, 'unselected': !isSelected }"
+    >
+    </mat-checkbox>
+</mat-card>

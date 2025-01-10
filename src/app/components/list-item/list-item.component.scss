@@ -1,0 +1,52 @@
+@use "../../../styles.scss" as global;
+@use '@angular/material' as mat;
+
+.item-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+
+    .list-title {
+        font-size: global.$text-size-regular;
+        font-weight: global.$text-weight-bold;
+    }
+
+    .list-subtitle {
+        font-size: global.$text-size-small;
+        font-weight: global.$text-weight-thin;
+    }
+
+    &.selected {
+        padding: 0px 10px;
+        background-color: global.$color-background-dark; // Light gray for selected
+
+        .list-subtitle {
+            display: none;
+        }
+    }
+
+    &.unselected {
+        padding: 6px 10px;
+        background-color: global.$color-primary; // Yellow for unselected
+
+        .list-subtitle {
+            display: block;
+        }
+    }
+
+    .content {
+        flex-grow: 1;
+    }
+
+}
+
+.checkbox {
+    @include mat.checkbox-overrides((selected-icon-color: global.$color-background-darker,
+            selected-focus-icon-color: global.$color-primary-dark,
+            selected-focus-state-layer-color: global.$color-primary-dark,
+            selected-hover-state-layer-color: global.$color-primary-dark,
+        ));
+}
