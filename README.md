@@ -1,59 +1,67 @@
-# AngularListaDeMercado
+# Angular Dynamic List Project
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+This project is a simple Angular application for dynamically rendering a list of items. It includes the ability to toggle selection, apply custom styling, and add new items to the list. The application uses Angular Material components for the UI.
 
-## Development server
+## Getting Started
 
-To start a local development server, run:
+Follow the instructions below to set up and run the project locally.
 
-```bash
-ng serve
-```
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v16 or later)
+- [Angular CLI](https://angular.io/cli) (v15 or later)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Technologies Used
 
-```bash
-ng generate component component-name
-```
+- **Angular** (v15 or later)
+- **Angular Material** for UI components
+- **TypeScript** for application logic
+- **SCSS** for styling
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## Installation
 
-## Building
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/angular-dynamic-list.git
+   ```
 
-To build the project run:
+2. Navigate to the project directory:
+   ```bash
+   cd angular-dynamic-list
+   ```
 
-```bash
-ng build
-```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+4. Run the application:
+   ```bash
+   ng serve
+   ```
 
-## Running unit tests
+5. Open your browser and navigate to:
+   ```
+   http://localhost:4200
+   ```
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## Usage
 
-## Running end-to-end tests
+### Adding a New Item
+1. Click the floating action button (FAB) at the bottom of the screen.
+2. A new item will be added to the list with placeholder data.
 
-For end-to-end (e2e) testing, run:
+### Toggling Item Selection
+1. Use the checkboxes next to each item to mark it as selected or unselected.
+2. Selected items are highlighted with a custom background color.
 
-```bash
-ng e2e
-```
+### Dynamic Data
+Modify the `items` array in the component's TypeScript file to define your custom list items.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
