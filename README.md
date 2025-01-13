@@ -1,6 +1,11 @@
-# Angular Dynamic List Project
+![image](https://github.com/user-attachments/assets/05dfedee-a702-4d54-b4f0-66c198c52275)
+
+# Angular List Project
 
 This project is a simple Angular application for dynamically rendering a list of items. It includes the ability to toggle selection, apply custom styling, and add new items to the list. The application uses Angular Material components for the UI.
+
+![image](https://github.com/user-attachments/assets/51e3ec5c-c1cf-4e25-85c3-a50b21c898d5)
+
 
 ## Getting Started
 
